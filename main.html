@@ -8,52 +8,38 @@
 </head>
 
 <body>
-
     <header>
         <p>Muhammad Andika Azkiya</p>
-
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About Me</a>
-            <a href="#contact">Contact Me</a>
+            <a href="contact.html">Contact Me</a>
         </nav>
     </header>
 
     <main>
-
         <section id="home" class="hero">
-
             <img src="fotoku.jpeg" alt="Foto Diri">
-
             <div class="text">
                 <h1>Hi, I'm Muhammad Andika Azkiya</h1>
-
                 <p>
                     I'm a student at Informatics Engineering, Faculty of Engineering,
                     Universitas Mataram and also a Batch Leader for
                     Himpunan Mahasiswa Informatika Unram.
                 </p>
             </div>
-
         </section>
 
-
         <section id="about" class="about">
-
             <div class="about-text">
                 <h2>About Me</h2>
                 <p>
                     My name is Muhammad Andika Azkiya, I was born in Mataram,
                     West Nusa Tenggara on January 7th, 2006. Now I'm 20 years old.
-                    I'm a student in the Informatics Engineering program at
-                    Universitas Mataram. I'm passionate about Cyber Security
-                    and Web Development.
                 </p>
             </div>
-
             <div class="skills">
                 <h2>Skills</h2>
-
                 <table>
                     <thead>
                         <tr>
@@ -61,18 +47,15 @@
                             <th>Level</th>
                         </tr>
                     </thead>
-
                     <tbody>
                         <tr>
                             <td>HTML</td>
                             <td>Intermediate</td>
                         </tr>
-
                         <tr>
                             <td>CSS</td>
                             <td>Intermediate</td>
                         </tr>
-
                         <tr>
                             <td>C++</td>
                             <td>Beginner</td>
@@ -80,34 +63,31 @@
                     </tbody>
                 </table>
             </div>
-
         </section>
 
         <section id="contact" class="contact">
-
             <div class="contact-container">
-
                 <h2>Contact Me</h2>
-
                 <p>
                     If you want to collaborate, discuss a project, or just say hello,
                     feel free to contact me through the form below.
                 </p>
-
                 <a href="contact.html" class="contact-button">
                     Go to Contact Form
                 </a>
-
             </div>
-
         </section>
-
     </main>
 
     <footer>
-        <p> 2026 Muhammad Andika Azkiya</p>
+        <p>© 2026 Muhammad Andika Azkiya</p>
     </footer>
 
+    <script>
+        // Skrip sinkronisasi tema di halaman utama
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
 </body>
 
 </html>

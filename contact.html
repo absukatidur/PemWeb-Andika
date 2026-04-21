@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Contact Me</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
     <header>
         <p>Muhammad Andika Azkiya</p>
         <nav>
@@ -26,24 +23,39 @@
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
                 </div>
-
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-
                 <div class="form-group">
                     <label for="date">Meeting Date</label>
                     <input type="date" id="date" name="date">
                 </div>
-
                 <div class="form-group">
                     <label for="message">Message</label>
                     <textarea id="message" rows="4" required></textarea>
                 </div>
-
-                <button type="submit">Send Message</button>
+                
+                <div class="button-group">
+                    <button type="submit">Send Message</button>
+                    <button type="button" id="theme-toggle">🌓 Change Theme</button>
+                </div>
             </form>
+
+            <div class="results-container">
+                <h3>Submitted Messages</h3>
+                <table id="messageTable">
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Email</th>
+                            <th>Tanggal</th>
+                            <th>Pesan</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
         </section>
     </main>
 
@@ -52,6 +64,5 @@
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
